@@ -1,20 +1,20 @@
 /* Formatting the body */
 body {
    max-width: 960px;
-   margin: auto; 
+   margin: auto;
    background-color: rgb(207, 207, 207);
 }
 
-/* Add background color to the navigation bar */
+/* Format the navigation bar */
 .topnav {
     background-color: white;
-    border-color: #cccccc;
+    border-bottom: 2px solid #cccccc; /* This is just adding space as a border, not a line? */
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    float: right; /* This reverses the order of the links */
     color: black;
     text-align: center;
     padding: 15px;
@@ -39,6 +39,7 @@ body {
     color: white;
     text-align: center;
     font-size: 18px;
+    float: left;
 }
 
 /* Style the main content container */
@@ -51,6 +52,7 @@ body {
 h1 {
     color: #4aaaa5;
     font-family: "Georgia", Times, Times New Roman, serif;
+    margin: 25px;
 }
 
 /* Image formatting */
@@ -61,6 +63,43 @@ img {
     margin: 5px 10px 5px 5px;
 }
 
+/* Style p text */
 p {
     font-family: "Arial", "Helvetica Neue", sans-serif;
+}
+
+/* Style the form text boxes */
+.input-text {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 8px 0px;
+}
+
+#input-message {
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+#input-submit {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 5px 15px;
+    margin: 10px 0px;
+    display: block;
+}
+
+/* Style footer */
+.footer {
+    color: white;
+    text-align: center;
+    background-color: grey;
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    padding: 10px 5px 0px 5px;
 }
