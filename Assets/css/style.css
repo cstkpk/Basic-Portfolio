@@ -58,8 +58,8 @@ body {
     padding: 10px 20px;
     max-width: 960px;
     margin: auto;
-    /* position: relative;
-    bottom: 100px; */
+    overflow: auto;
+    max-height: 500px;
     /* How to get the h1 text, hr line, and content to all align as flush on the left and right sides? */
 }
 
@@ -108,29 +108,41 @@ img {
 }
 
 /* Style photos in Portfolio */
-.clearfix::after { 
-    content: "";
-    display: block;
-    clear: both; /* Does this make it so I can't place images next to each other in a grid? */
-}
-
-/* CSS Flexbox to make the images sit next to each other in columns */
-.row {
-    display: flex;
-    /* flex-wrap: wrap; */
-    padding: 0px 5px;
-}
-
 .column {
-   flex: 50%;
-   flex-wrap: wrap;
-   padding: 0px 5px; 
+    float: left;
+    width: 30%;
+    padding: 5px;
+    margin: 10px;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+/* Container holding the image and text for all images */
+.img-1, .img-2, .img-3, .img-4, .img-5 {
+    position: relative;
 }
+  
+/* Text block for all images */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    left: 10px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* .row {
+    overflow: scroll;
+} */
 
 /* Style footer */
 .footer {
