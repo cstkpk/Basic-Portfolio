@@ -36,6 +36,11 @@ body {
     background-color: #c8eeec;
 }
 
+/* Change the color of links on focus */
+.topnav a:focus {
+    background-color: #c8eeec;
+}
+
 /* Style the logo button inside the navigation bar */
 #logo {
     background-color: #4aaaa5;
@@ -54,7 +59,7 @@ body {
     max-width: 960px;
     margin: auto;
     overflow: auto;
-    max-height: 480px;
+    /* max-height: 480px; */
     /* How to get the h1 text, hr line, and content to all align as flush on the left and right sides? */
 }
 
@@ -63,12 +68,6 @@ this fix just adds padding to the bottom of the main content of the portfolio pa
 .main-content-portfolio {
     padding-bottom: 50px;
 }
-
-/* .main-content-position {
-    position: sticky;
-    bottom: 80px;
-    top: 0px;
-} */
 
 /* Style h1 text */
 h1 {
@@ -152,7 +151,7 @@ img {
     filter: drop-shadow(8px 8px 10px gray);
 }
 
-/* Style footer */
+/* Style footer */ /* Fixed footer isn't the solution */
 .footer {
     color: white;
     text-align: center;
@@ -166,17 +165,11 @@ img {
     padding: 10px 5px 0px 5px;
 }
 
-/* Absolute footer position: doesn't solve the problem */
-/* .footer {
-    color: white;
-    text-align: center;
-    background-color: grey;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px 5px 0px 5px;
-    border-top: 8px solid #4aaaa5;
-    margin-top: 10px;
-  } */
+/* .master-container {
+    min-height: 100%;
+    margin-bottom: -50px;
+} */
+
+.push {
+    height: 100px;
+}
