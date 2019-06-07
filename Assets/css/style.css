@@ -22,7 +22,7 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: right; /* This reverses the order of the links */
+    float: right; /* This reverses the order of the links; fixed order in the html */
     color: #777;
     text-align: center;
     padding: 15px;
@@ -59,14 +59,6 @@ body {
     max-width: 960px;
     margin: auto;
     overflow: auto;
-    /* max-height: 480px; */
-    /* How to get the h1 text, hr line, and content to all align as flush on the left and right sides? */
-}
-
-/*This is sort of a cheat fix for the problem I'm having with the fixed footer overlapping with the main content:
-this fix just adds padding to the bottom of the main content of the portfolio page so that there's minimal overlap with footer */
-.main-content-portfolio {
-    padding-bottom: 50px;
 }
 
 /* Style h1 text */
@@ -75,8 +67,6 @@ h1 {
     font-family: "Georgia", Times, Times New Roman, serif;
     margin: 10px;
 }
-
-/* How to add a margin to hr element to make it flush on left and right sides without skewing img and p elements? */
 
 /* Image formatting */
 img {
@@ -165,11 +155,7 @@ img {
     padding: 10px 5px 0px 5px;
 }
 
-/* .master-container {
-    min-height: 100%;
-    margin-bottom: -50px;
-} */
-
+/* Create space so the footer doesn't overlap the main content */
 .push {
     height: 100px;
 }
