@@ -86,11 +86,10 @@ img {
 
 #input-message {
     width: 100%;
-    /* padding: 60px; */
     box-sizing: border-box;
-    /* margin: 8px 0px; */
 }
 
+/* Style the submit button */
 #input-submit {
     background-color: #4aaaa5;
     color: white;
@@ -141,7 +140,7 @@ img {
     filter: drop-shadow(8px 8px 10px gray);
 }
 
-/* Style footer */ /* Fixed footer isn't the solution */
+/* Style footer */ 
 .footer {
     color: white;
     text-align: center;
